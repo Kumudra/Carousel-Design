@@ -1,0 +1,168 @@
+.MAIN_CAROUSEL > .carousel-item{
+    border: 2px solid #777;
+    background-color: #000;
+}
+
+/*Buttons*/
+.MAIN_CAROUSEL .buy{
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    overflow: hidden;
+    background:#66ff66;
+    color: ghostwhite;
+}
+.MAIN_CAROUSEL .buy span{
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+.MAIN_CAROUSEL .buy:hover span{
+    text-decoration: none;
+    color: rgb(9, 42, 2);
+}
+.MAIN_CAROUSEL .buy::before, button::after{
+    text-decoration: none;
+    position: absolute;
+    top:0; left: 0; width: 100%; height: 100%; z-index: 0;
+}
+.MAIN_CAROUSEL .buy::before{
+    content:"";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3,1,0.8,1);
+}
+.MAIN_CAROUSEL .buy:hover::before{
+    transform: translate3d(100%, 0, 0);
+}
+
+/* Row and Carousel Item */
+.row {
+    display: flex;
+    align-items: center; /* Aligns everything properly */
+}
+.carousel-item{
+    border: 2px solid #777;
+    background-color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+
+    padding: 2rem; /* Reduce padding to prevent content overflow */
+}
+
+.logo-img {
+    max-width: 150px; /* Set a max width */
+    width: 100%; /* Makes it responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/*Table*/
+.MAIN_CAROUSEL .table,.MAIN_CAROUSEL  .table th,.MAIN_CAROUSEL .table td {
+    border: 1px solid #fff;
+    background-color: #000;
+    color: ghostwhite;
+
+    max-width: 30%;
+    text-align: center;
+}
+
+/* Card Body */
+.card-body h1 {
+    max-width: 60%;
+    font-family: "Bebas Neue", serif;
+    font-weight: 800;
+    font-style: normal;
+
+    margin-bottom: 10px;
+}
+.card-body p {
+    max-width: 50%;
+
+    margin-bottom: 10px;
+}
+
+/*Can image */
+.can-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) { /* Tablets and smaller devices */
+    .carousel-item {
+        padding: 1rem;
+    }
+    .logo-img {
+        max-width: 120px;
+    }
+    .card-body h1 {
+        font-size: 1.8rem;
+    }
+    .card-body p {
+        font-size: 0.9rem;
+    }
+    .buy {
+        padding: 0.7rem 1.5rem;
+    }
+}
+@media (max-width: 768px) { /* Small tablets and Large phones */
+    .row {
+        flex-direction: column; 
+    }
+    .col-md-9,
+    .col-md-2 {
+        width: 100%; 
+        text-align: center; 
+    }
+    .logo-img {
+        max-width: 100px;
+    }
+    .card-body h1 {
+        font-size: 1.5rem;
+    }
+    .card-body p {
+        font-size: 0.8rem;
+    }
+    .buy {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .carousel-control-prev {
+        left: -20px;
+    }
+    .carousel-control-next {
+        right: -20px;
+    }
+}
+
+@media (max-width: 480px) { /* Phones */
+    .carousel-item {
+        padding: 0.5rem;
+    }
+    .logo-img {
+        max-width: 80px;
+    }
+    .card-body h1 {
+        font-size: 1.2rem;
+    }
+    .card-body p {
+        font-size: 0.7rem;
+    }
+    .buy {
+        padding: 0.5rem 1rem;
+    }
+}

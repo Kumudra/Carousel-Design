@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Card Carousel</title>
+    
+    <!-- CSS Styling -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="card.css">
+
+    <!-- Fontawesome & Bootstrap -->
+    <script src="https://kit.fontawesome.com/c25cabee86.js" crossorigin="anonymous"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: "UnifrakturMaguntia", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        body {
+            background-color: black;
+            color: ghostwhite;
+            background-image: url("https://www.monsterenergy.com/img/hdr-bg.webp");
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Carousels: Introducing All-Time Favourite Cans -->
+    <div class="MAIN_CAROUSEL">
+        <div class="container my-5">
+            <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel3" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel3" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel3" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active p-5 active mt-5" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-md-9 my-4">
+                                <div class="d-flex">
+                                    <img src="https://web-assests.monsterenergy.com/mnst/27dc2a2c-7e55-4f9d-be19-38e150da7614.webp" alt="logo1" class="me-4 logo-img">
+                                    <table class="table table-bordered w-50">
+                                        <tr>
+                                            <th><b>Flavor Profile</b></th>
+                                        </tr>
+                                        <tr>
+                                            <th>Sweet and Salty</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title mt-3">ZERO SUGAR MONSTER ENERGY</h1>
+                                    <p class="card-text">Monster Zero Sugar has the ideal combo of the right ingredients in the right proportion to deliver just the right kick with the same taste as OG but with Zero Sugar. Monster Zero Sugar helps fight fatigue with 160mg of caffeine and improves mental performance and focus.</p>
+                                    
+                                    <div class="d-flex gap-2 mt-3">
+                                        <a href="#" class="buy"><span>Buy on Amazon</span></a>
+                                        <a href="#" class="buy"><span>Where to Buy</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="can-container col-md-2 mx-auto position-relative">
+                                <img src="https://web-assests.monsterenergy.com/mnst/e6e3cf70-f77e-4d4d-bd51-f2448af390ce.webp" alt="slide2" class="d-block can-img img-fluid" height="300">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-5 mt-5" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-md-9 my-4">
+                                <div class="d-flex">
+                                    <img src="https://web-assests.monsterenergy.com/mnst/3f5057dd-1559-4d97-9cbd-d580965b8ebc.webp" alt="logo" class="me-4 logo-img">
+                                    <table class="table table-bordered w-50">
+                                        <tr>
+                                            <th><b>Flavor Profile</b></th>
+                                        </tr>
+                                        <tr>
+                                            <td>Light Refreshing Citrus</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title mt-3">ZERO ULTRA A.K.A. THE WHITE MONSTER</h1>
+                                    <p class="card-text">The light, refreshing citrus flavor of Zero Ultra has broken the rules of flavor. <br> 10 calories, zero sugar, and a full load of our Monster Energy blend to keep the good times rolling.</p>
+                                    
+                                    <div class="d-flex gap-2 mt-3">
+                                        <a href="#" class="buy"><span>Buy on Amazon</span></a>
+                                        <a href="#" class="buy"><span>Where to Buy</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="can-container col-md-2 mx-auto position-relative">
+                                <img src="https://web-assests.monsterenergy.com/mnst/5587a01b-3c83-42f7-a741-b29a1d534409.webp" alt="slide2" class="d-block can-img" height="300">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-5 mt-5" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-md-9 my-4">
+                                <div class="d-flex">
+                                    <img src="https://web-assests.monsterenergy.com/mnst/aff63052-e533-47a5-b90a-d237c6698170.webp" alt="logo3" class="me-4 logo-img">
+                                    <table class="table table-bordered w-50">
+                                        <tr>
+                                            <th><b>Flavor Profile</b></th>
+                                        </tr>
+                                        <tr>
+                                            <td>Crisp and Refreshing Black Cherry</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="card-body">
+                                    <h1 class="card-title mt-3">ZERO-SUGAR ULTRA BLACK</h1>
+                                    <p class="card-text">Zero Sugar Monster Ultra Black offers a crisp, slightly sweet black cherry flavor with just 10 calories. Get it while the getting's is good.</p>
+                                    
+                                    <div class="d-flex gap-2 mt-3">
+                                        <a href="#" class="buy"><span>Buy on Amazon</span></a>
+                                        <a href="#" class="buy"><span>Where to Buy</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="can-container col-md-2 mx-auto">
+                                <img src="https://web-assests.monsterenergy.com/mnst/d4d13fe2-245e-4422-af6e-1dd369c0be8b.webp" alt="slide3" class="d-block can-img" height="300">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-5 mt-5" data-aos="fade-up">
+                        <div class="row">
+                            <div class="col-md-9 my-4">
+                                <div class="d-flex">
+                                    <img src="https://web-assests.monsterenergy.com/mnst/2fcb3bfa-26b6-43bd-be19-269677750cbd.webp" alt="logo4" class="me-4 logo-img">
+                                    <table class="table table-bordered w-50">
+                                        <tr>
+                                            <th><b>Flavor Profile</b></th>
+                                        </tr>
+                                        <tr>
+                                            <td>Refreshing Golden Pineapple</td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div class="card-body">
+                                    <h1 class="card-title mt-3">ZERO-SUGAR ULTRA GOLD</h4>
+                                    <p class="card-text">Ultra Gold has the heavenly fresh flavor of a perfectly ripened golden pineapple. Zero Sugar, 10 calories, lighter tasting, and with our Monster Energy blend.</p>
+                                    
+                                    <div class="d-flex gap-2 mt-3">
+                                        <a href="#" class="buy"><span>Buy on Amazon</span></a>
+                                        <a href="#" class="buy"><span>Where to Buy</span></a>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="can-container col-md-2 mx-auto">
+                                <img src="https://web-assests.monsterenergy.com/mnst/29f553fd-ac10-434b-a9b9-12eb40e606c8.webp" alt="slide4" class="d-block can-img" height="300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Card Carousels Starting from Here -->
+    <div class="CardCarousels">
+        <div class="Intro container mt-5" id="Intro" data-aos="fade-up">
+            <h1 class="title text-end">Most Energetic Time <br> of Your Life</h1>
+            <p class="text-wrap text-end">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ad similique voluptates neque minima veniam aliquam tenetur? Beatae aliquid, totam nam repellat vel dicta odio pariatur quo sint, <u>libero modi.</u></p>
+        </div>
+        <div class="container text-center mb-5">
+            <div class="carousel-container">
+                <button class="nav-button prev" onclick="prevCard()">&#10094;</button>
+                <div class="card-wrapper">
+                    <div class="card" id="card1" data-aos="fade-right">
+                        <img src="https://web-assests.monsterenergy.com/mnst/1cb31b0a-fd8d-42b4-8e3b-e9fcb0f6bb80.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">ZERO-SUGAR ULTRA WATERMELON</h5>
+                            <div class="card-details">
+                                <p><b>Price</b> <span>$2.00</span></p>
+                                <p><b>Taste</b> <span>Watermelon</span></p>
+                                <p><b>Volume</b> <span>473ml</span></p>
+                            </div>
+                            <button class="btn pt-2">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" id="card2" data-aos="fade-right">
+                        <img src="https://web-assests.monsterenergy.com/mnst/f7c37e77-9b5d-46ae-83ee-8d8cd27042b3.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">ZERO-SUGAR ULTRA STRAWBERRY DREAM</h5>
+                            <div class="card-details">
+                                <p><b>Price</b> <span>$2.15</span></p>
+                                <p><b>Taste</b> <span>Stawberry</span></p>
+                                <p><b>Volume</b> <span>473ml</span></p>
+                            </div>
+                            <button class="btn">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" id="card3" data-aos="fade-right">
+                        <img src="https://web-assests.monsterenergy.com/mnst/c66034b5-eee7-4bbe-8283-6f6beb051872.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">ZERO-SUGAR ULTRA SUNRISE</h5>
+                            <div class="card-details">
+                                <p><b>Price</b> <span>$1.58</span></p>
+                                <p><b>Taste</b> <span>Orange</span></p>
+                                <p><b>Volume</b> <span>473ml</span></p>
+                            </div>
+                            <button class="btn pt-2">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" id="card4" data-aos="fade-right">
+                        <img src="https://web-assests.monsterenergy.com/mnst/d8a379e2-9213-4b9f-9520-b6a562b126f9.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">ZERO-SUGAR ULTRA ROSÁ</h5>
+                            <div class="card-details">
+                                <p><b>Price</b> <span>$1.59</span></p>
+                                <p><b>Taste</b> <span>Floral</span></p>
+                                <p><b>Volume</b> <span>473ml</span></p>
+                            </div>
+                            <button class="btn pt-2">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" id="card5" data-aos="fade-right">
+                        <img src="https://web-assests.monsterenergy.com/mnst/1bc46890-6c15-4c60-aa46-a6ea7e9c06db.webp" class="card-img-top" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">ZERO-SUGAR ULTRA RED</h5>
+                            <div class="card-details">
+                                <p><b>Price</b> <span>$1.44</span></p>
+                                <p><b>Taste</b> <span>Berry</span></p>
+                                <p><b>Volume</b> </span>473ml</span></p>
+                            </div>
+                            <button class="btn pt-2">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class="final" data-aos="fade-up">
+                    <i class="fa-solid fa-poop"></i>
+                    <br> Out of Menu! <br>
+                    <a href="#Intro">Go Back!</a>
+                </p>
+    
+                <button class="nav-button next" onclick="nextCard()">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-light py-3">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <p class="mb-0">&copy; 2024 YourWebsiteName. All rights reserved.</p>
+            </div>
+            <div class="col-md-4">
+                <p class="mb-0">Coded by <a target="_blank" class="text-warning">Group 1</a></p>
+            </div>
+            <div class="col-md-4">
+                <p class="mb-0">Designed by <a href="https://www.monsterenergy.com/en-us/energy-drinks/" target="_blank" class="text-warning">Monster.com</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Java Script for Card-Carousel -->
+   
